@@ -1,0 +1,293 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	background-color: #fff;
+}
+
+hr{
+	border-width: 2px;
+	border-color: #637685;
+	width: 20%;
+}
+
+.img-responsive{
+	width: 100%;
+	z-index: -1;
+}
+
+.navbar-brand a{
+	font-size: 36px;
+	font-weight: bold;
+	color: black;
+	padding-left: 10px;
+}
+
+.navbar-brand a, .smaller{
+	text-decoration: none;
+}
+
+.navbar-brand .smaller{
+	font-size: 18px;
+}
+
+.navbar-default{
+	opacity: 0.60;
+	background-color: #637685;
+	outline-color: #637685;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.navbar-collapse{
+	float: right;
+	padding-top: 25px;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #637685;
+}
+
+.navbar-collapse .navbar-nav li a {
+	color: black;
+	opacity: 1.00;
+	letter-spacing: 0.2em;
+}
+
+.navbar-collapse .navbar-nav li a:hover{
+	color: #FFE534;
+	transition: .4s;
+}
+
+.navbar-toggle{
+	background-color: #637685;
+	border-color: transparent;
+	margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.landing_container {
+	background: url('../img/landing2.jpg') no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+	color: white;
+	padding-top: 58%;
+	position: relative;
+}
+
+.landing_container .hero_text {
+	left: 0;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+
+.landing_container .hero_text h1 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 0.25em;
+}
+
+.landing_container .hero_text h1 span {
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.gallery_container {
+	background-color: black;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.gallery_container h1 {
+	color: white;
+	letter-spacing: 0.33em;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.photo-box {
+  margin: 0 0 10px 0;
+}
+.photo-box .image-wrap img {
+  width: 100%;
+}
+.photo-box .image-wrap .likes {
+  position: absolute;
+  bottom: 10px;
+  padding: 5px;
+  background: black;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.photo-box .description {
+  font-size: 12px;
+  background: white;
+  letter-spacing: 1px;
+  padding: 10px;
+  height: 75px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.gallery_container .load-btn_container {
+	bottom: 0;
+	position: fixed;
+	z-index: 10;
+}
+
+.gallery_container .load-btn_container .btn-default {
+	font-weight: 700;
+	opacity: 0.8;
+}
+
+.gallery_container .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.footer_container {
+	background: url('../img/landing4.jpg');
+	background-size: cover;
+	background-position: 100% 100%;
+	color: white;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 50%;
+	position: relative;
+}
+
+.footer_container .footer_text {
+	height: auto;
+	position: absolute;
+	text-align: center;
+	top: 10%;
+	width: 100%;
+}
+
+.footer_container .footer_text .info {
+	font-size: 40px;
+	letter-spacing: 0.25em;
+}
+
+.footer_container .footer_text p {
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 345px;
+}
+
+.footer_container .footer_text a {
+	color: white;
+	text-decoration: none;
+	margin: 10px;
+}
+
+.footer_container .footer_text h2 {
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.landing_container .hero_text h1 {
+		font-size: 65px;
+	}
+
+	.landing_container .hero_text h1 span {
+		font-size: 28px;
+	}
+
+	.footer_container .footer_text {
+		top: 20%;
+	}
+
+	.footer_container .footer_text .info {
+		font-size: 65px;
+	}
+
+	.footer_container .footer_text p {
+		font-size: 30px;
+		width: 450px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.navbar-default, .navbar-toggle, .navbar-collapse {
+		background-color: transparent;
+		border-color: transparent;
+		opacity: 1;
+	}
+
+	.navbar-collapse {
+		padding-top: 0;
+	}
+
+	.navbar-brand {
+		margin-top: 10px;
+	}
+
+	.navbar-brand a {
+		color: white;
+		font-size: 26px;
+	}
+
+	.navbar-brand a .smaller {
+		font-size: 15px;
+	}
+
+	.landing_container {
+		background: url('../img/landing2-xs.jpg') no-repeat;
+		background-size: cover;
+		background-position: 100% 50%;
+		padding-top: 120%;
+	}
+
+	.landing_container .hero_text {
+		top: 37%;
+	}
+
+	.landing_container .hero_text h1 {
+		font-size: 25px;
+	}
+
+	.landing_container .hero_text h1 span {
+		font-size: 17px;
+	}
+
+	.navbar-collapse .navbar-nav li a {
+		color: white;
+		font-size: 16px;
+	}
+
+	.gallery_container h1 {
+		font-size: 25px;
+	}
+
+	.footer_container {
+		background: url('../img/landing4-xs.jpg') no-repeat;
+		background-size: cover;
+		background-position: 100% 50%;
+		padding-top: 120%;
+	}
+
+	.footer_container .footer_text .info {
+		font-size: 35px;
+	}
+
+	.footer_container .footer_text p {
+		font-size: 16px;
+		width: 310px;
+	}
+
+	.footer_container .footer_text h2 {
+		font-size: 21px;
+	}
+}
